@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="services.css">
+    <title>Document</title>
+</head>
+<body>
+
+<header class="navbar">
+     <div class="logo-container">
+            <a href="#" class="logo-link">
+                <img src="./photo_2026-05-13_16-30-53.jpg" alt="GMC Business Startup Hub Logo" class="logo-image">
+                <!-- <span class="logo-text">GMC Business Startup Hub</span> -->
+            </a>
+        </div>
+<nav class="nav-links">  
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+  <ul class="nav-bar">
+    <li><a href="index.html" class="home">Home</a></li>
+    <li><a href="about.html">About</a></li>
+     </a>
+    
+    <!-- Programs Dropdown -->
+    <li class="dropdown">
+      <a href="programs.html">Programs <i class="fas fa-caret-down"></i> </a>
+      <ul class="dropdown-menu">
+        <!-- <li><a href="dkbank.html">DK Bank</a></li> -->
+        <li><a href="pelsuung.html">Pelsuung Programs</a></li>
+        <li><a href="training.html"> Training</a></li>
+         <li><a href="services.html">Business Services</a></li>
+         
+      </ul>
+    </li>
+    
+    <!-- News Dropdown -->
+    <li class="dropdown">
+      <a href="latest.html"> News <i class="fas fa-caret-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="vacancy.html">Vacancy</a></li>
+        <li><a href="investors.html">Investment</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+        
+        <!-- <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search services...">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div> -->
+    </header>
+    
+<div class="container">
+
+  <div class="hero">
+    <h1 class="title">GMC Business Setup Services</h1>
+    <p class="subtitle">
+      GMC Business Startup Hub helps entrepreneurs establish and grow their businesses smoothly.
+    </p>
+  </div>
+
+    <div class="services"data-aos="fade-up" >
+
+      <div class="card"data-aos="fade-up" >
+        <div class="icon">📝</div>
+        <h3>Business Registration</h3>
+        <p>GMC Business Startup Hub assists entrepreneurs with business registration, licensing, compliance, startup guidance, and connections to mentors, agencies, and financial institutions </p>
+        <button class="btn" onclick="openForm()">Apply</button>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="200">
+        <div class="icon">💼</div>
+        <h3>Business Consultation</h3>
+        <p>Business Consultation services at GMC Business Startup Hub offer expert guidance, mentorship, and strategic advice to help entrepreneurs plan, manage, and grow successful businesses..</p>
+        <button class="btn" onclick="openForm()">Apply</button>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="400">
+        <div class="icon">📊</div>
+        <h3>Financial Planning</h3>
+        <p>Financial Planning services at GMC Business Startup Hub help entrepreneurs with budgeting, funding guidance, cash flow management, and financial strategies to support sustainable business growth.</p>
+        <button class="btn" onclick="openForm()">Apply</button>
+      </div>
+
+      <div class="card"data-aos="fade-up" >
+        <div class="icon">📢</div>
+        <h3>Marketing Support</h3>
+        <p>Marketing Support services at GMC Business Startup Hub guide entrepreneurs in branding, digital advertising, and social media to boost visibility, engage customers, and grow successfully.</p>
+        <button class="btn" onclick="openForm()">Apply</button>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="200">
+        <div class="icon">🤝</div>
+        <h3>Networking Programs</h3>
+        <p>Networking Programs at GMC Business Startup Hub connect entrepreneurs with mentors, investors, and peers through events and workshops, fostering professional relationships, collaboration, and long-term growth.</p>
+        <button class="btn" onclick="openForm()">Apply</button>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="400">
+        <div class="icon">🏢</div>
+        <h3>Startup Incubation</h3>
+        <p>Startup Incubation services at GMC Business Startup Hub provide entrepreneurs with mentorship, workspace, and training to transform innovative ideas into sustainable, successful businesses.</p>
+        <button class="btn" onclick="openForm()">Apply</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup Form -->
+  <div class="popup" id="popup">
+    <div class="form-box">
+
+      <span class="close" onclick="closeForm()">×</span>
+
+      <h2>Apply for Service</h2>
+
+      <form id="serviceForm">
+
+        <input type="text" placeholder="Enter Your Name" required>
+
+        <input type="email" placeholder="Enter Your Email" required>
+
+        <textarea rows="4" placeholder="Write Your Business Idea"></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+      </form>
+
+    </div>
+  </div>    
+
+
+
+<footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p class="address">Gelephu, Sarpang, Bhutan</p>
+                <br>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-envelope"></i> registration.gmc@ns.bt</li>
+                    <li><i class="fa-solid fa-phone"></i> +97521346587</li>
+                    <li><i class="fa-solid fa-brands fa-whatsapp"></i> +97512345678</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="icon-fb" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="icon-yt" title="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="icon-ig" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="icon-tt" title="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    
+                    <a href="https://wa.me/97512345678" target="_blank" rel="noopener noreferrer" class="icon-wa" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>About us</h3>
+                <ul class="footer-links">
+                  <li><a href="home.html">Home</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="latest.html"> News</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-portal-trigger">Sign Up Portal</a></li>
+                      <li><a href="contact.html">FAQ</a></li>
+                     <li><a href="investors.html">Investment Guide</a></li>
+                </ul>
+            </div>
+  <div class="footer-column">
+            <h3>Location</h3>
+            <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14343.832960699046!2d90.4776104!3d26.8706312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e1941785555555%3A0x34f3262082a41474!2sGelephu%20Mindfulness%20City%20Thromde%20(Municipal%20Office)!5e0!3m2!1sen!2sbt!4v1716000000000!5m2!1sen!2sbt" 
+                    width="100%" 
+                    height="180" 
+                    style="border:0; border-radius: 4px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+              
+        </div>
+    </footer>
+<div class="thrinley">
+            <p>&copy; 2026 GMC Business Startup Hub. All rights reserved.</p>
+        </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="services.js"></script>   
+</body>
+</html>

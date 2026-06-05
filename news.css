@@ -1,0 +1,560 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* You can safely delete this block from your style.css file */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;             /* Space between your logo image and text */
+    text-decoration: none; /* Removes underline from the link wrapper */
+}
+
+.logo-image {
+    height: 90px;          /* Adjust this value to make your logo bigger or smaller */
+     width: 90px;
+    border-radius: 50px;         
+    object-fit: contain;
+    display: block;
+     margin-left: 30px;
+}
+
+/* Make sure the text aligns nicely with the new image logo */
+.logo-text {
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--primary);
+    white-space: nowrap;   /* Prevents the logo text from breaking into two lines */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar li {
+  position: relative;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    padding: 5px;
+    z-index: 1002;
+}
+
+
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--primary-green);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* below the parent */
+  left: 0;
+  background: #f9f9f9;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   
+}
+
+.dropdown-menu :hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.dropdown-menu li a {
+   text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 8px 16px;
+    padding-right: 35px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.85rem;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+#search-input:focus {
+    width: 250px;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(11, 41, 30, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    color: var(--text-muted);
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background-image: url("https://gmc.bt/images/temple/aerial-view-stupa.webp");
+     background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+
+/* nav{
+    background: linear-gradient(90deg, #0f172a, #1e3a8a);
+    background-color: darkslategray;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}  */
+
+/* MENU */
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+}
+
+/* LINKS */
+ul li a{
+    text-decoration: none;
+    /* color: white; */
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: 0.4s;
+    position: relative;
+}
+
+/* HOVER EFFECT */
+ul li a:hover{
+    color: #38bdf8;
+    transform: translateY(-4px);
+}
+
+/* UNDERLINE ANIMATION */
+ul li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: 0.4s;
+    transform: translateX(-50%);
+}
+
+ul li a:hover::after{
+    width: 70%;
+}
+
+.jobs-section{
+  min-height:100vh;
+  background:#111827;
+  padding:60px 40px;
+  color:white;
+  text-align:center;
+}
+
+.jobs-section h1{
+  font-size:50px;
+  margin-bottom:15px;
+}
+
+.subtitle{
+  color:#d1d5db;
+  margin-bottom:50px;
+  font-size:18px;
+}
+
+.job-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:25px;
+}
+
+.job-card{
+  background:#1f2937;
+  padding:30px;
+  border-radius:15px;
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.job-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 20px rgba(0,255,170,0.3);
+    
+}
+
+.job-card h2{
+  /* color:#00ffb3; */
+  color: white;
+  margin-bottom:15px;
+}
+
+.job-card p{
+  margin-bottom:12px;
+  color:#e5e7eb;
+  line-height:1.5;
+}
+
+.job-card button{
+  margin-top:15px;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  /* background:#00ffb3; */
+  background:#F5E8C7;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.job-card button:hover{
+  background:white;
+}
+
+h1 {
+  /* color: #00ffb3; */
+  color: white;
+}
+
+
+.investor-section{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGmBwt_JX7KEacSwtMnZSaGJEt2TS4CXiGKw&s");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+.overlay{
+  text-align:center;
+  color:white;
+  max-width:1100px;
+}
+
+.overlay h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  font-size:20px;
+  margin-bottom:50px;
+  color:#ddd;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:25px;
+  margin-bottom:40px;
+}
+
+.card{
+  background:rgba(255,255,255,0.1);
+/*   background-color: #1e293b; */
+  padding:30px;
+  border-radius:15px;
+  backdrop-filter:blur(1px);
+  transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,255,170,0.3);
+}
+
+.card h2{
+  margin-bottom:15px;
+  /* color:#00ffb3; */
+  color: white;
+}
+
+.card p{
+  line-height:1.6;
+  color:#eee;
+}
+
+button{
+  padding:15px 35px;
+  border:none;
+  border-radius:30px;
+  /* background:#00ffb3; */
+  color:black;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:white;
+}
+
+.card ul{
+  list-style:none;
+  margin-top:15px;
+  text-align:left;
+}
+
+.card ul li{
+  margin:10px 0;
+  color:#f1f1f1;
+}
+
+li {
+  text-align: center;
+}
+
+
+.news-section{
+    min-height:100vh;
+    padding:60px 40px;
+    background-color: #1f2937;
+    text-align:center;
+}
+
+.news-section h1{
+  font-size:55px;
+/*   color:#00ffb3; */
+    color: #ffffff;
+  margin-bottom:15px;
+}
+
+.subtitle{
+/*   color:#cbd5e1; */
+  margin-bottom:50px;
+  font-size:18px;
+}
+
+.news-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:30px;
+}
+
+.news-card{
+  background-color: transparent rgba(69, 112, 126);
+  padding:30px;
+  border-radius:20px;
+/*   border:1px solid rgba(255,255,255,0.08); */
+  transition:0.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.news-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:5px;
+}
+
+.news-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 15px 30px rgba(0,255,179,0.25);
+}
+
+.news-card h2{
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.news-card p{
+  
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.news-card button{
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+/*   background:#00ffb3; */
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.news-card button:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+.contact-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.contact-btn {
+  padding: 16px 45px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px solid var(--accent-cyan);
+  background: transparent;
+  color: var(--accent-cyan);
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: var(--accent-cyan);
+  color: #000;
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.4);
+}
+
+.site-footer {
+    background: #06120e;
+    color: #f8fafc;
+    padding: 60px 0 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+    gap: 40px;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+}
+
+.contact-list, .footer-links { list-style: none; }
+
+.contact-list li, .footer-links li {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cbd5e1;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-links a:hover { color: var(--white); text-decoration: underline; }
+
+.social-icons { display: flex; gap: 10px; margin-top: 20px; }
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--white);
+    background: rgba(255,255,255,0.1);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.2s ease;
+}
+
+.social-icons a:hover { background: var(--accent); }
+
+.map-box { border-radius: 8px; overflow: hidden; }
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 1024px) {
+    .footer-container { grid-template-columns: 1fr 1fr; }
+    .philosophy-container { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 15px; padding: 20px; }
+    .hero-content h1 { font-size: 2.25rem; }
+    .footer-container { grid-template-columns: 1fr; }
+}
