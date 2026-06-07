@@ -117,12 +117,6 @@ AOS.init({
    
 });
 
-const dropdown = document.querySelector(".dropdown");
-
-dropdown.addEventListener("click", () => {
-    dropdown.classList.toggle("active");
-});
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const dropdowns = document.querySelectorAll(".dropdown");
@@ -150,25 +144,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-
-const dropdown = document.querySelector(".dropdown");
-
-dropdown.addEventListener("mouseleave", () => {
-    dropdown.classList.remove("active");
-});
-
-document.querySelectorAll(".dropdown-menu a").forEach(item => {
-    item.addEventListener("click", () => {
-        item.closest(".dropdown").classList.remove("active");
-    });
-});
-
-document.addEventListener("click", (e) => {
-    if (!e.target.closest(".dropdown")) {
-        document.querySelectorAll(".dropdown").forEach(dropdown => {
-            dropdown.classList.remove("active");
-        });
-    }
-});
-
-dropdown.classList.remove("active");
