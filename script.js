@@ -153,15 +153,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// Hide all dropdowns
-const dropdowns = document.querySelectorAll(".dropdown");
-
-dropdowns.forEach(dropdown => {
-    dropdown.classList.remove("active");
+document.querySelectorAll(".dropdown-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        link.closest(".dropdown").classList.remove("active");
+    });
 });
 
-// function hideDropdowns() {
-//     document.querySelectorAll(".dropdown").forEach(dropdown => {
-//         dropdown.classList.remove("active");
-//     });
-// }
+document.querySelectorAll(".dropdown").forEach(dropdown => {
+    dropdown.classList.remove("active");
+});
