@@ -817,12 +817,75 @@ cta-wrapper {
     }
 
     /* Dropdown menus inline adjustment for mobile */
-    .dropdown-menu {
+      .dropdown-menu {
         position: static;
         width: 100%;
         box-shadow: none;
+        text-align: center;
+        justify-content: center;
         background: var(--light-bg);
     }
+
+    .dropdown {
+        position: relative;
+        width: 100%;
+    } 
+
+     .dropdown > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .dropdown {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    } 
+
+    .dropdown > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 8px; */
+         width: 100%;
+    } 
+
+    .dropdown-menu {
+    display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+    display: block;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+    }
+
+     .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        background: #fff;
+        box-shadow: none;
+    } 
+
+    .dropdown-menu {
+    display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+    display: block;
+    }
+    
+    .dropdown.active .fa-caret-down {
+        transform: rotate(180deg);
+        transition: 0.3s ease;
+    }
+
 
     .search-container {
         justify-content: center;
