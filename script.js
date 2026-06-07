@@ -152,3 +152,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+// Hide all dropdowns
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach(dropdown => {
+    dropdown.classList.remove("active");
+});
+
+// function hideDropdowns() {
+//     document.querySelectorAll(".dropdown").forEach(dropdown => {
+//         dropdown.classList.remove("active");
+//     });
+// }
