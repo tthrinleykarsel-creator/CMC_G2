@@ -320,11 +320,11 @@ html {
 .investor-section::before{
     content:"";
     position:absolute;
-    top: 15%;
+    top: 13.5%;
     left:50%;
     transform:translateX(-50%);
     width:2px;
-    height:70%;
+    height:161vh;
     background:linear-gradient(#00b894, #38bdf8);
     opacity:0.4;
 }
@@ -440,6 +440,7 @@ html {
     .item::before{
         left:0px !important;
         right:auto !important;
+        display: none;
     }
 
     .menu{
