@@ -436,6 +436,7 @@ html {
     background-color: #111827;
     padding: 40px 30px;
     border-radius: 12px;
+    margin: auto;
     border: 1px solid #edf2f7;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -778,12 +779,48 @@ html {
     }
 
     /* Dropdown menus inline adjustment for mobile */
-    .dropdown-menu {
+    /* .dropdown-menu {
         position: static;
         width: 100%;
         box-shadow: none;
         background: var(--light-bg);
+    } */
+
+    .dropdown {
+        position: relative;
+        width: 100%;
     }
+
+    .dropdown > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        background: #fff;
+        box-shadow: none;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 10px 25px;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown.active .fa-caret-down {
+        transform: rotate(180deg);
+        transition: 0.3s ease;
+    }
+
 
     .search-container {
         justify-content: center;

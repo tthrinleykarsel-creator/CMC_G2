@@ -125,4 +125,30 @@ AOS.init({
    
 });
 
+document.addEventListener("DOMContentLoaded", () => {
 
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    dropdowns.forEach(dropdown => {
+
+        const trigger = dropdown.querySelector("a");
+
+        trigger.addEventListener("click", (e) => {
+
+            if (window.innerWidth <= 768) {
+
+                e.preventDefault();
+
+                dropdowns.forEach(item => {
+                    if (item !== dropdown) {
+                        item.classList.remove("active");
+                    }
+                });
+
+                dropdown.classList.toggle("active");
+            }
+        });
+
+    });
+
+});

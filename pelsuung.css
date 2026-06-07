@@ -349,11 +349,15 @@ html {
             transform: translateY(-8px);
         }
 
-        .pillar i {
+        .card i, .pillar i {
             font-size: 40px;
             color: #dde3e6;
             margin-bottom: 15px;
         }
+        .pillar h3, .pillar p{
+            line-height: 1.5;
+        }
+    
         .pillar p{
             text-align:left;
         }
@@ -398,6 +402,9 @@ html {
 
         .card:hover{
             transform: translateY(-8px);
+        }
+        .card i{
+            margin-left: 40%;
         }
 
         .card h3 {

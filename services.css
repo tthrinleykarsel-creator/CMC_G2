@@ -586,11 +586,11 @@ html {
 
     }
     .card{
-        height: 50vh;
+        height:100%;
         width: 90%;
     }
 
-            .footer-container {
+    .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
     }

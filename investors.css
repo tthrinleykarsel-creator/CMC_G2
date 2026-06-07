@@ -289,7 +289,7 @@ html {
 }
 
 .investor-section{
-    padding:100px 8%;
+    padding:50px 8%;
     position:relative;
     /* background-color: #0b1220; */
     color: white;
@@ -321,7 +321,7 @@ html {
 .investor-section::before{
     content:"";
     position:absolute;
-    top:200px;
+    top: 15%;
     left:50%;
     transform:translateX(-50%);
     width:2px;
@@ -345,7 +345,8 @@ html {
     padding:25px;
     border-radius:16px;
     backdrop-filter:blur(10px);
-    margin-bottom:50px;
+    margin-bottom:40px;
+    margin-top: -20px;
     position:relative;
     /* text-align: left; */
     transition:0.4s;
@@ -421,18 +422,54 @@ html {
 @media(max-width:768px){
 
     .investor-section::before{
-        left:10px;
+        left: 0px;
+        margin-top: 50px;
+    }
+
+    .investor-section{
+        margin-bottom: -20px;
+    
+    }
+
+    .investor-list{
+
     }
 
     .item{
         width:100%;
         left:0 !important;
-        margin-left:10px;
+        margin-left:0 auto;
     }
 
     .item::before{
         left:0px !important;
         right:auto !important;
+    }
+    .menu{
+        flex-direction:column;
+    }
+
+    .dropdown{
+        width:100%;
+    }
+
+    .dropdown-menu{
+        position:static;
+        display:none;
+        width:100%;
+        background:#333;
+    }
+
+    .dropdown-menu li{
+        width:100%;
+    }
+
+    .dropdown-menu li a{
+        padding:15px;
+        border-top:1px solid #555;
+    }
+    .dropdown.active .dropdown-menu{
+    display:block;
     }
 }
 
@@ -637,6 +674,7 @@ ul li{
     font-size: 0.95rem;
 }
 
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -778,6 +816,8 @@ ul li{
         width: 100%;
         padding: 0 10px;
     }
+
+
 
     .card{
         width: 100%;

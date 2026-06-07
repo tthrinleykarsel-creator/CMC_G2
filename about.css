@@ -384,7 +384,7 @@ button:hover {
 /* ACTIVE IMAGE */
 .image-row img.active {
   opacity: 1;
-  transform: scale(1.15);
+  transform: scale(1);
   border: 2px solid #38bdf8;
   filter: grayscale(0%);
 }

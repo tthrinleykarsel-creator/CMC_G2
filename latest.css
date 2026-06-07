@@ -28,9 +28,6 @@ html {
     scrollbar-width: none;
 }
 
-
-
-
 /* --- REUSABLE COMPONENTS --- */
 .section-container {
     max-width: 1200px;
@@ -412,7 +409,7 @@ html {
 /* BUTTON */
 
 .status-btn{
-    margin-top:22px;
+    margin-top: 22px;
     border:none;
     outline:none;
     justify-content: center;
@@ -430,8 +427,9 @@ html {
     cursor:pointer;
     transition:0.4s;
     position:relative;
+    top: 8px;
     overflow:hidden;
-    margin: auto;
+    margin: 0auto;
 }
 
 /* BUTTON SHINE */
@@ -693,10 +691,20 @@ html {
         font-size: 14px;
     }
 
-            .footer-container {
+    .status-btn{
+          padding: 8px 8px;
+          font-size: 16px;
+          text-align: center;
+          margin: auto;
+          justify-content: center;
+    }
+
+    .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+
 
     .site-footer{
         text-align: center;
