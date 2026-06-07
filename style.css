@@ -835,15 +835,14 @@ html {
         box-shadow: none;
     } 
 
-    .dropdown-menu li a {
-        display: block;
-        padding: 10px 25px;
+    .dropdown-menu {
+    display: none;
     }
 
-    .dropdown .dropdown.active .dropdown-menu {
-        display: block;
+    .dropdown.active .dropdown-menu {
+    display: block;
     }
-
+    
     .dropdown.active .fa-caret-down {
         transform: rotate(180deg);
         transition: 0.3s ease;
