@@ -153,24 +153,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-const dropdown = document.querySelector(".dropdown");
+document.querySelectorAll(".dropdown > a").forEach(link => {
 
-dropdown.addEventListener("mouseleave", () => {
-    dropdown.classList.remove("active");
-});
+    link.addEventListener("click", (e) => {
 
-document.querySelectorAll(".dropdown-menu a").forEach(item => {
-    item.addEventListener("click", () => {
-        item.closest(".dropdown").classList.remove("active");
+        e.preventDefault();
+
+        const dropdown = link.parentElement;
+
+        dropdown.classList.toggle("active");
+
     });
-});
 
-document.addEventListener("click", (e) => {
-    if (!e.target.closest(".dropdown")) {
-        document.querySelectorAll(".dropdown").forEach(dropdown => {
-            dropdown.classList.remove("active");
-        });
-    }
 });
-
-dropdown.classList.remove("active");
