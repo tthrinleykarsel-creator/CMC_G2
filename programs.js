@@ -96,44 +96,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const trigger = dropdown.querySelector("a");
 
-        trigger.addEventListener("click", (e) => {
+        trigger.addEventListener("click", function(e) {
 
             if (window.innerWidth <= 768) {
 
-                e.preventDefault();
+                // First click: open dropdown
+                if (!dropdown.classList.contains("active")) {
 
-                dropdowns.forEach(item => {
-                    if (item !== dropdown) {
-                        item.classList.remove("active");
-                    }
-                });
+                    e.preventDefault();
 
-                dropdown.classList.toggle("active");
+                    // Close other dropdowns
+                    dropdowns.forEach(item => {
+                        if (item !== dropdown) {
+                            item.classList.remove("active");
+                        }
+                    });
+
+                    dropdown.classList.add("active");
+
+                }
+
+                // Second click:
+                // Don't prevent default.
+                // Browser follows href normally.
             }
+
         });
 
     });
 
 });
-
-const dropdown = document.querySelector(".dropdown");
-
-dropdown.addEventListener("mouseleave", () => {
-    dropdown.classList.remove("active");
-});
-
-document.querySelectorAll(".dropdown-menu a").forEach(item => {
-    item.addEventListener("click", () => {
-        item.closest(".dropdown").classList.remove("active");
-    });
-});
-
-document.addEventListener("click", (e) => {
-    if (!e.target.closest(".dropdown")) {
-        document.querySelectorAll(".dropdown").forEach(dropdown => {
-            dropdown.classList.remove("active");
-        });
-    }
-});
-
-dropdown.classList.remove("active");

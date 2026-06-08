@@ -125,20 +125,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const trigger = dropdown.querySelector("a");
 
-        trigger.addEventListener("click", (e) => {
+        trigger.addEventListener("click", function(e) {
 
             if (window.innerWidth <= 768) {
 
-                e.preventDefault();
+                // First click: open dropdown
+                if (!dropdown.classList.contains("active")) {
 
-                dropdowns.forEach(item => {
-                    if (item !== dropdown) {
-                        item.classList.remove("active");
-                    }
-                });
+                    e.preventDefault();
 
-                dropdown.classList.toggle("active");
+                    // Close other dropdowns
+                    dropdowns.forEach(item => {
+                        if (item !== dropdown) {
+                            item.classList.remove("active");
+                        }
+                    });
+
+                    dropdown.classList.add("active");
+
+                }
+
+                // Second click:
+                // Don't prevent default.
+                // Browser follows href normally.
             }
+
         });
 
     });

@@ -125,6 +125,13 @@
 .nav-links a:hover, .nav-links a.active {
     color: var(--accent);
 }
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
 
 .search-container {
     position: relative;
