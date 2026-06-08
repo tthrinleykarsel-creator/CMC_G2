@@ -332,7 +332,7 @@ html {
       text-align: left;
     }
 
-    .btn{
+    /* .btn{
       padding:10px 20px;
       border:none;
       background:#22db69;
@@ -340,11 +340,36 @@ html {
       border-radius:8px;
       cursor:pointer;
       transition:0.3s;
-    }
+    } */
 
-    .btn:hover{
+     button, .apply-btn{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    /* margin-top:25px; */
+    /* margin-left: 5%; */
+    width:50%;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    color:#07111f;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.4s ease;
+    position: relative;
+    top: 15px;
+}
+
+.apply-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(0,255,170,0.4);
+}
+
+    /* .btn:hover{
       background:#49d81d;
-    }
+    } */
 
     /* Popup Form */
     .popup{
