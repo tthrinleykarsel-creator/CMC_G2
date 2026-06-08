@@ -886,7 +886,6 @@ cta-wrapper {
         transition: 0.3s ease;
     }
 
-
     .search-container {
         justify-content: center;
         padding: 15px 0;
@@ -944,7 +943,7 @@ cta-wrapper {
         width:90%;
     }
 
-        .footer-container {
+    .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -953,8 +952,6 @@ cta-wrapper {
         text-align: center;
         justify-content: center;
     }
-
-    
 
     .footer-column{
         text-align: center;
