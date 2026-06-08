@@ -703,7 +703,7 @@ ul li{
     
     /* --- 1. Navbar Resets --- */
 .navbar { 
-        flex-direction: row; 
+        /* flex-direction: row;  */
         justify-content: space-between;
         padding: 15px 25px;
     }
@@ -758,7 +758,9 @@ ul li{
     }
 
     .logo-image {
-        margin-left: 0; /* Clear desktop offset spacing */
+        margin-left: 0; 
+        width: 70px;
+        /* Clear desktop offset spacing */
     }
 
     /* --- TRIGGER ACTIONS WHEN LOGIC CHECKBOX IS CHECKED --- */
@@ -795,8 +797,8 @@ ul li{
 
     /* --- 6. Content Section Scaling --- */
     .hero {
-        height: 80vh;
-        padding: 80px 20px;
+        height: 85vh;
+        padding: 100px 20px;
     }
     .hero .moon{
         /* margin-top: 100%; */

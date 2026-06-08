@@ -243,7 +243,6 @@ html {
 .hero-section {
     background-image: url("https://gmc.bt/images/temple/aerial-view-stupa.webp");
     background-size: cover;
-
     background-position: center;
     padding: 100px 20px;
     height:90vh;
@@ -741,28 +740,9 @@ html {
 /* Mobile Screens (Max width 768px) */
 @media (max-width: 768px) {
 
-    *{
-        box-sizing: border-box;
-    }
-
-    html,
-    body {
-        width: 100%;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* =========================
-       NAVBAR
-    ========================= */
-
     .navbar {
-        display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 12px 20px;
-        position: relative;
+        padding: 15px 20px;     
     }
 
     .logo-image {
@@ -773,10 +753,6 @@ html {
 
     .hamburger {
         display: flex;
-        flex-direction: column;
-        gap: 6px;
-        cursor: pointer;
-        z-index: 1002;
     }
 
     .hamburger span {
@@ -823,13 +799,18 @@ html {
     .nav-bar li {
         width: 100%;
         text-align: center;
+        
     }
 
+    /* .logo-text{
+        font-size: 1.3em;
+        font-weight: 800;
+    } */
     .nav-bar li a {
         display: block;
         padding: 15px;
         color: #333;
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 0;
     }
 
@@ -894,7 +875,8 @@ html {
 
     .hero-section {
         height: auto;
-        padding: 100px 20px;
+        padding: 140px 20px;
+        
     }
 
     .hero-content {

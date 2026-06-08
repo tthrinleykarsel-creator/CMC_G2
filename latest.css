@@ -742,7 +742,7 @@ html {
     /* 6. Base Layout Sections Mobile Adaptation fixes */
     .hero {
         height: auto;
-        padding: 80px 20px;
+        padding: 185px 20px;
     }
 
     .hero h1 { 

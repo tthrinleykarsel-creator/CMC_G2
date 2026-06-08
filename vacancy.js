@@ -195,7 +195,7 @@ jobs.forEach(job => {
                 </div>
 
                 <button type="submit" class="submit-btn">
-                    Submit Application
+                    Submit
                 </button>
 
             </form>

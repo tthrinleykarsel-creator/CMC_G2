@@ -383,12 +383,16 @@ h2{
 
  .program-list li:hover{
     transform: translateY(-6px);
-  border-color: rgba(0, 242, 254, 0.4);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3)  
+    border-color: rgba(0, 242, 254, 0.4);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3)  
  }
 
 .program-list li h4{
     text-align: center;
+}
+
+.filter-list{
+    color: white;
 }
 
 .hidden {
@@ -399,7 +403,6 @@ h2{
 #formbox{
     width: 250px;
     padding: 10px;
-/*  background-color: #ffffff; */
     margin: 0 auto;
     display: none;
     flex-direction: column;
