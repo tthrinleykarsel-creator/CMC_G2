@@ -853,11 +853,9 @@ button:hover {
         background: #fff;
         flex-direction: column;
         gap: 0;
-
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-
         transition: all .4s ease;
         box-shadow: 0 10px 15px rgba(0,0,0,.08);
     }
@@ -1007,18 +1005,19 @@ button:hover {
     /* Vision & Mission */
     .vision-mission-card {
         grid-template-columns: 1fr;
-        padding: 30px 20px;
-        gap: 25px;
+        padding: 20px 20px;
+        gap: 15px;
+
     }
 
     .border-right {
         border-right: none;
         border-bottom: 1px solid #ddd;
-        padding-bottom: 25px;
+        padding-bottom: 5px;
     }
 
     .vm-block {
-        padding: 0;
+        padding: 25px;
     }
 
     /* Team */

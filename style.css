@@ -739,6 +739,9 @@ html {
 
 /* Mobile Screens (Max width 768px) */
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
 
     .navbar {
         justify-content: space-between;

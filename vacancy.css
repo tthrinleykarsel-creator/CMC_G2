@@ -451,7 +451,7 @@ header input, header select {
     margin: 0 auto;
     justify-content: center;
     text-align: center;
-    /* margin-top:25px; */
+    margin-top:25px;
     margin-left: 23%;
     width:50%;
     padding:15px;
@@ -463,13 +463,40 @@ header input, header select {
     font-weight:700;
     cursor:pointer;
     transition:0.4s ease;
-}
+} 
 
-.apply-btn:hover{
+ .apply-btn:hover{
     transform:scale(1.05);
     box-shadow:0 10px 30px rgba(0,255,170,0.4);
+} 
+
+
+
+     /* button, .apply-btn{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-top:25px;
+    margin-left: 5%;
+    width:50%;
+    padding:12px;
+    border:none;
+    border-radius:20px;
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    color:#07111f;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.4s ease;
+    /* position: relative;
+    top: 15px;
+    left:  */
 }
 
+/* .apply-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(0,255,170,0.4);
+}  */
 
 /* FORM BOX */
 

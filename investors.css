@@ -700,6 +700,9 @@ ul li{
 
 /* Mobile & Small Tablets Breakpoint (Max-width: 768px) */
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     
     /* --- 1. Navbar Resets --- */
 .navbar { 
@@ -823,8 +826,6 @@ ul li{
         padding: 0 10px;
     }
 
-
-
     .card{
         width: 100%;
         padding: 20px 20px;
@@ -839,8 +840,6 @@ ul li{
         text-align: center;
         justify-content: center;
     }
-
-    
 
     .footer-column{
         text-align: center;
