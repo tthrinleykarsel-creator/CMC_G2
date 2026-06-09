@@ -741,6 +741,8 @@ html {
 @media (max-width: 768px) {
     body{
         overflow-x: hidden;
+        padding: 0;
+        margin: 0;
     }
 
     .navbar {
